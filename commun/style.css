@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 5rem;
+}
+
+/* ----- HEADER ----- */
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.736);
+}
+
+header h1 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: bold;
+  background: linear-gradient(90deg, #4a4ee3, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ----- HAMBURGER ----- */
+.hamburger {
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  display: block;
+}
+
+/* ----- SIDEBAR (mobile) ----- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  max-width: 20rem;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+  transition: left 0.3s ease-in-out;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.closeBtn {
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  background: #f3f4f6;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  float: right;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 0.8rem 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #333;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background: #3b82f6;
+  color: white;
+}
+
+/* ----- MENU DESKTOP ----- */
+.desktop-menu {
+  display: none;
+}
+
+.desktop-menu ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.desktop-menu ul li a {
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.desktop-menu ul li a:hover {
+  color: #3b82f6;
+}
+
+/* ----- RESPONSIVE BREAKPOINTS ----- */
+@media (min-width: 768px) {
+  .hamburger { display: none; }
+  .sidebar { display: none; }            
+  .desktop-menu { display: block; }
+  header h1 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+  }
+  header .desktop-menu ul li a {
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+  }
+}
+
+/* ----- FOOTER SECTION ----- */
+
+footer {
+    background-color: #d1d5dbbb;
+    text-align: center;
+    padding: 1rem;
+    color: gray;
+    font-size: 0.9rem;
+    a {
+        color: gray;
+    }
+    a:hover {
+        color: #3b82f6;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+}

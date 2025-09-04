@@ -1,0 +1,224 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: #e7e7e9;
+}
+
+.home .image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#name {
+    color: #4a4ee3;
+}
+
+.home .text-container p{
+    color: gray;
+}
+
+.home .buttons {
+    width: 100%;
+
+}
+
+.home .buttons .btn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    margin: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .buttons .btn:hover {
+    background-color: #2563eb;
+}
+
+#contact {
+    background-color: white;
+    color: black;
+}
+
+#contact:hover {
+    background-color: #d1d5db;
+}
+
+.image {
+    position: relative;
+    animation: moveSide 4s infinite alternate ease-in-out;
+}
+
+@keyframes moveSide {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+@media screen and (min-width: 768px) {
+    .home .image {
+        max-width: 100%;
+    }
+    .home .text-container h2{
+        font-size: 2.5rem;
+    }
+    .home .text-container p{
+        font-size: 1.2rem;
+        max-width: 800px;
+    }
+    .home .buttons {
+        display: flex;
+        gap: 1rem;
+    }
+    .btn {
+        font-size: 1.5rem;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .home {
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 2rem;
+        height: 100vh;
+    }  
+
+    .home .image {
+        max-width: 400px;
+        margin-bottom: 0;
+    }
+    .home .text-container {
+        max-width: 600px;
+        text-align: left;
+    }
+    .home .text-container h2{
+        font-size: 3rem;
+    }
+    .home .text-container p{
+        font-size: 1.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+.headerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.headerSection p {
+    font-size: 1rem;
+    color: gray;
+    text-align: center;
+}
+
+.contentSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    padding: 1rem;
+    margin: 1rem;
+    border: #3b82f6 1px solid;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.presentation p {
+    color: gray;
+}
+
+.presentation:hover {
+    background-color: #e0e7ff;
+    box-shadow: 0 0 1rem rgba(59, 130, 246, 0.5);
+    transform: translateY(-5px);
+}
+
+@media screen and (min-width: 768px) {
+    .headerSection h2 {
+        font-size: 2.5rem;
+    }
+    .headerSection p {
+        font-size: 1.2rem;
+    }
+    .contentSection {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .presentation {
+        width: 40%;
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .presentation {
+        width: 25%;
+        height: 15rem;
+    }
+}
+
+.callToAction {
+    background-color: #d1d5db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+    P {
+        color: gray;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+.btn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    margin: 0.5rem;
+    width: full;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover {
+    background-color: #2563eb;
+}
+
+@media screen and (min-width: 768px) {
+    .callToAction h2 {
+        font-size: 2rem;
+    }
+    .callToAction p {
+        font-size: 1.2rem;
+    }
+    .callToAction .btn {
+        font-size: 1.2rem;
+    }
+}
