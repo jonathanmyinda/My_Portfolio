@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos</title>
+    <link rel="stylesheet" href="/commun/style.css">
+    <link rel="stylesheet" href="aPropos.css">
+</head>
+<body>
+    <header>
+        <h1 class="Logo">Jonathan Myinda</h1>
+        <button class="hamburger" onclick="openMenu()">☰</button>
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="/Accueil/index.html">Accueil</a></li>
+                <li><a href="aPropos.html">À propos</a></li>
+                <li><a href="#Projets">Projets</a></li>
+                <li><a href="#Competences">Compétences</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="sidebar" id="sidebar">
+        <button class="closeBtn" onclick="closeMenu()">✕</button>
+        <ul class="menu">
+            <li>
+                <a href="#Accueil">Accueil</a>
+            </li>
+            <li>
+                <a href="#A_propos">A propos</a>
+            </li>
+            <li>
+                <a href="#Projets">Projets</a>
+            </li>
+            <li>
+                <a href="#Competance">Competance</a>
+            </li>
+            <li>
+                <a href="#Contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="aPropos">
+        <h2>À propos de moi</h2>
+        <p>Découvrez mon parcours, mes passions et ma vision du développement web.</p>
+    </div>
+    <section class="aboutMe">
+        <section class="content">
+            <img src="/Medias/profile.jpeg" alt="photo de profil" class="profile">
+            <h3>Jonathan Myinda</h3>
+            <p>Développeur Web & UX/UI Designer</p>
+            <p>📍République Démocratique du Congo</p>
+            <p>📅En formation continue</p>
+            <a href="mailto:myindaj@gmail.com">✉️ myindaj@gmail.com</a>
+            <a href="tel:+243980215272">📞 +243 980 215 272</a>
+            <a href="#" class="download-cv">📥 Télécharger mon CV</a>
+        </section>
+        <section class="ContainerSection">
+            <div class="histoire">
+                <h2>Mon Histoire</h2>
+                <p>Passionné par le numérique et la création digitale, je combine logique technique et sens esthétique pour créer des interfaces intuitives et visuellement engageantes. Mon approche allie développement web et design UX/UI.</p>
+                <p>Je maîtrise JavaScript, React, SQL, ainsi que les outils de design tels que Figma et Photoshop. Cette double compétence me permet de concevoir et développer des solutions digitales complètes, de la maquette au code final.</p>
+                <p>Actuellement en formation continue avec Kadea Academy et D-Clic, je développe constamment mes compétences en développement front-end et back-end, tout en approfondissant ma maîtrise du design d'expériences utilisateur.</p>
+                <p>Mes projets incluent des clones fonctionnels d'applications populaires, des sites web complets et des maquettes interactives, démontrant ma capacité à transformer des concepts en réalités digitales engageantes.</p>
+            </div>
+            <div></div>
+            <div></div>
+        </section>
+    </section>
+</body>
+<script src="../commun/hamburger.js"></script>
+</html>

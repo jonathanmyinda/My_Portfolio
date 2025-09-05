@@ -1,0 +1,122 @@
+.aPropos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aPropos p {
+    color: gray;
+}
+
+@media screen  and (min-width: 768px) {
+    .aPropos h2 {
+        font-size: 2.5em;
+    }
+    .aPropos p {
+        font-size: 1.2em;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: #3b82f6 1px solid;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 0 1rem rgba(59, 130, 246, 0.5);
+}
+
+.content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 999px;
+    object-fit: cover;
+}
+
+.content p {
+    color: gray;
+    text-align: center;
+}
+
+.content a {
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.content a:hover {
+    color: #3b82f6;
+}
+
+.content .download-cv {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+.content .download-cv:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .content img {
+        width: 250px;
+        height: 250px;
+    }
+    .content h3 {
+        font-size: 2rem;
+    }
+    .content p {
+        font-size: 1.2rem;
+    }
+    .content a {
+        font-size: 1.2rem;
+    }
+}
+
+.histoire {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    width: 90%;
+    margin-left: 5%;
+    padding: 1rem;
+    border: #3b82f6 1px solid;
+    border-radius: 0.5rem;
+    p {
+        color: gray;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .histoire h2 {
+        font-size: 2rem;
+    }
+    .histoire p {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutMe {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ContainerSection {
+        width: 70%;
+    }
+    .content {
+        width: 30%;
+    }
+
+}
